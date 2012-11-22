@@ -14,8 +14,10 @@
 
   <py:match path='body/div[@id="wrap"]/div/header' once="true">
     <header py:attrs="select('@*')">
-      <div id="site-name"><a href="${h.url('home')}">${g.site_title}</a></div>
-      <div py:if="g.site_description" id="site-description">${g.site_description}</div>
+      <div id="site-info-container">
+        <div id="site-name"><a href="${h.url('home')}">${g.site_title}</a></div>
+        <div py:if="g.site_description" id="site-description">${g.site_description}</div>
+      </div>
 
       <div class="menu">
         <div id="mainmenu">
