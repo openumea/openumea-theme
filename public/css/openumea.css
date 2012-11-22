@@ -75,7 +75,8 @@ header .account {
 header #site-name,#site-description {
 /*  font-size: 1.4em; */
   font-family: 'Frutiger', serif, 'Arial';
-/*  padding: 0px;
+  padding: 0px;
+/*
   padding-left: 0px;
   padding-bottom: 0px; */
   /*font-weight: bold;*/
