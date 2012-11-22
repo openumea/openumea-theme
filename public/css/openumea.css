@@ -124,6 +124,10 @@ a:hover {
   background-color: rgb(196,164,39);
 }
 
+.btn-primary {
+  background-color: rgb(148,33,45);
+  background-image: none;
+}
 
 .footer.outer {
   border-top: none;
