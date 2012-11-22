@@ -46,13 +46,13 @@ Garamond - löptext, aldrig rubriker
 */
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Frutiger';
+  font-family: 'Frutiger', serif, 'Arial';
   font-weight: normal;
   margin-bottom: 10px;
 }
 
-div.header.outer {
-  background-color: #000000;
+.header.outer {
+  background-color: black;
   background-image: none;
 }
 
@@ -61,9 +61,20 @@ header #logo {
   display: none;
 }
 
+header #site-info-container {
+  display: inline-block;
+}
+header .menu {
+  display: inline-block;
+  float: right;
+}
+header .account {
+  float: none;
+}
+
 header #site-name,#site-description {
 /*  font-size: 1.4em; */
-  font-family: 'Frutiger';
+  font-family: 'Frutiger', serif, 'Arial';
 /*  padding: 0px;
   padding-left: 0px;
   padding-bottom: 0px; */
@@ -76,17 +87,57 @@ header #site-name,#site-description {
 }
 header #site-name a {
   color: inherit;
+  font-size: 1.8em;
+}
+header #site-description {
+  color: white;
 }
 
 header .menu a{
-  font-family: 'Frutiger';
+  font-family: 'Frutiger', serif, 'Arial';
   font-size: 1.0em;
   color: rgb(255,255,255);
   text-shadow: none;
+  /* is there a better way? */
+  line-height: 62px;
+  padding-right: 20px;
 }
 
-/*
-.header .menu #mainmenu {
-display: inline;
+div.submenu {
+  background-color: rgb(132,119,131) !important;
 }
+
+body {
+  font-family: 'Garamond', 'Times';
+  color: black;
+}
+a, a:visited {
+  color: rgb(216,149,35);
+}
+
+a:hover {
+  color: rgb(132,119,131);
+}
+
+.filter-list {
+  background-color: rgb(196,164,39);
+}
+
+
+.footer.outer {
+  border-top: none;
+  background-color: rgb(132,119,131);
+  background-image: none;
+/*
+  background-image: -webkit-linear-gradient(top, rgb(132,119,131), #ffffff);
+  background-image: -moz-linear-gradient(top, rgb(132,119,131), #ffffff);
+  background-image: -ms-linear-gradient(top, rgb(132,119,131), #ffffff);
+  background-image: -o-linear-gradient(top, rgb(132,119,131), #ffffff);
+  background-image: linear-gradient(top, rgb(132,119,131), #ffffff);
+  fromilter: progid:DXImageTransform.Microsoft.gradient(startColorStr='rgb(132,119,131)', EndColorStr='#ffffff');
 */
+}
+
+.footer a,.footer a:visited{
+  color: black;
+}
