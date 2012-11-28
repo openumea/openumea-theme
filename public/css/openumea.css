@@ -43,10 +43,13 @@ RGB: 8.79.130
 Frutiger - Rubriker, ingreser, aldrig kursiv.
 Garamond - löptext, aldrig rubriker
 
+The orange Umea kommun uses is kind of wierd, so this is one that Dan choose:
+rgb(204,102,0)
+
 */
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Frutiger', serif, 'Arial';
+  font-family: 'myriad-pro','Frutiger', serif, 'Arial';
   font-weight: normal;
   margin-bottom: 10px;
 }
@@ -63,14 +66,14 @@ header #logo {
 
 header #site-name,#site-description {
 /*  font-size: 1.4em; */
-  font-family: 'Frutiger', serif, 'Arial';
+  font-family: 'myriad-pro','Frutiger', serif, 'Arial';
   padding: 0px;
 /*
   padding-left: 0px;
   padding-bottom: 0px; */
   /*font-weight: bold;*/
   /*color: #333;*/
-  color: rgb(216,149,35);
+  color: rgb(204,102,0);
   text-shadow: none;
 /*  text-shadow: 1px 1px 3px #ccc;
   line-height: 1.3; */
@@ -84,8 +87,9 @@ header #site-description {
 }
 
 header .menu a{
-  font-family: 'Frutiger', serif, 'Arial';
+  font-family: 'myriad-pro', 'Frutiger', serif, 'Arial';
   font-size: 1.0em;
+  font-weight: normal;
   color: rgb(255,255,255);
   text-shadow: none;
   /* is there a better way? */
@@ -95,6 +99,7 @@ header .menu a{
 
 div.submenu {
   background-color: #e6e6e6;
+  background-image: url(/images/fabric_1.png);
 }
 
 div.submenu form {
@@ -102,19 +107,42 @@ div.submenu form {
 }
 
 #menusearch input {
-  background: url(/images/Search.png) no-repeat scroll 7px 7px;
-  padding-left: 30px;
+  background-image: url(/images/Search.png);
+  background-position: 98% center;
+  background-repeat: no-repeat;
+  padding-right: 30px;
   background-color: white;
+  width: 90%;
 }
 
-body {
-  font-family: 'Garamond', 'Times';
+/*
+#menutabs {
+  display: none;
+}
+*/
+
+div.divider-vertical{
+  width: 2px;
+  height: 40px;
+  margin: 0 9px;
+  overflow: hidden;
+  background-color: black;
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
+  background-image: -ms-linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
+  background-image: -o-linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
+  background-image: linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
+}
+
+body,p {
+  font-family: 'adobe-garamond-pro', 'Garamond', 'Times';
+  font-size: 14px;
   color: black;
   height: inherit;
 }
 
 body.index.home .front-page .action-box {
-  background-color: initial;
+  background: inherit;
   box-shadow: rgb(185,185,185) 0 1px 15px;
   -moz-box-shadow: rgb(185,185,185) 0 1px 15px;
   -webkit-box-shadow: rgb(185,185,185) 0 1px 15px;
@@ -125,38 +153,28 @@ body.index.home .front-page .action-box {
 }
 
 a, a:visited {
-  color: rgb(216,149,35);
+  color: rgb(204,102,0);
 }
 
 a:hover {
-  color: #e6e6e6;
-}
-
-.filter-list {
-  background-color: rgb(196,164,39);
+  color: rgb(204,102,0);
 }
 
 .btn-primary {
   background-color: rgb(148,33,45);
   background-image: none;
 }
+.btn-primary:hover {
+  background-color: rgb(128,13,25);
+  background-image: none;
+}
 
 .footer.outer {
   border-top: none;
   background-color: #e6e6e6;
-  background-image: none;
-/*  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff); */
-/*  bottom: 0px; */
-/*  position: absolute;
-  width: 100%; */
-
+  background-image: url(/images/fabric_1.png);
 /*
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
-  background-image: -moz-linear-gradient(top, #e6e6e6, #ffffff);
-  background-image: -ms-linear-gradient(top, #e6e6e6, #ffffff);
-  background-image: -o-linear-gradient(top, #e6e6e6, #ffffff);
-  background-image: linear-gradient(top, #e6e6e6, #ffffff);
-  fromilter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#ffffff');
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);i
 */
 }
 
