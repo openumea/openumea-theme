@@ -42,7 +42,7 @@
             <div class="span9">
               <span id="menusearch">
                 <form action="${h.url(controller='package', action='search')}" method="GET">
-                  <input name="q" value="${c.q if hasattr(c, 'q') else ''}" class="search" placeholder="${_('Find datasets')}" style="background: url(/img/find.png) no-repeat scroll 7px 7px; padding-left:30px;"/>
+                  <input name="q" value="${c.q if hasattr(c, 'q') else ''}" class="search" placeholder="${_('Find datasets')}"/>
 		  <!--<img src="/img/find.png" style="float: left"/>-->
                 </form>
               </span>

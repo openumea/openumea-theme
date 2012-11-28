@@ -101,6 +101,12 @@ div.submenu form {
   margin: inherit;
 }
 
+#menusearch input {
+  background: url(/images/Search.png) no-repeat scroll 7px 7px;
+  padding-left: 30px;
+  background-color: white;
+}
+
 body {
   font-family: 'Garamond', 'Times';
   color: black;
