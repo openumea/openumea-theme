@@ -14,20 +14,17 @@
 
   <py:match path='body/div[@id="wrap"]/div/header' once="true">
     <header py:attrs="select('@*')">
-      <div id="site-info-container">
-        <div id="site-name"><a href="${h.url('home')}">${g.site_title}</a></div>
-        <div py:if="g.site_description" id="site-description">${g.site_description}</div>
-      </div>
-
-      <div class="menu">
-        <div id="mainmenu">
+      <div class="row">
+        <div class="span4">
+          <div id="site-name"><a href="${h.url('home')}">${g.site_title}</a></div>
+          <div py:if="g.site_description" id="site-description">${g.site_description}</div>
+        </div>
+        <div class="span8 menu">
           ${h.nav_link(_('About'), controller='home', action='about')}
           <span py:if="h.check_access('package_create')">${h.nav_link(_('Add a dataset'), controller='package', action='new')}</span>
           ${h.nav_named_link(_('Groups'), name='%s_index' % h.default_group_type() )}
-
           ${h.nav_link(_('Search'), controller='package', action='search', highlight_actions = 'new index')}
-        </div>
-        <div class="menu account">
+
           <span class="ckan-logged-in" style="display: none;">
             <a href="${h.url_for(controller='user',action='me')}">${h.gravatar((c.userobj.email_hash if c and c.userobj else ''),size=20)}${c.user}</a>
             <a href="${h.url_for('/user/_logout')}">Logout</a>
@@ -38,14 +35,50 @@
           </span>
         </div>
       </div>
-      <div class="submenu">
-        <span id="menusearch">
-          <form action="${h.url(controller='package', action='search')}" method="GET">
-            <input name="q" value="${c.q if hasattr(c, 'q') else ''}" class="search" placeholder="${_('Find datasets')}" />
-          </form>
-        </span>
-      </div>
     </header>
+    <div class="submenu">
+      <div class="container">
+        <div class="row">
+            <div class="span9">
+              <span id="menusearch">
+                <form action="${h.url(controller='package', action='search')}" method="GET">
+                  <input name="q" value="${c.q if hasattr(c, 'q') else ''}" class="search" placeholder="${_('Find datasets')}" style="background: url(/img/find.png) no-repeat scroll 7px 7px; padding-left:30px;"/>
+		  <!--<img src="/img/find.png" style="float: left"/>-->
+                </form>
+              </span>
+            </div>
+            <div class="span3">
+<!--
+          <div class="row">
+            <div class="span1">Latest datasets</div>
+            <div class="span1">Groups</div>
+            <div class="span1">Tags</div>
+          </div>
+-->
+<div class="tabbable"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+    <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <p>I'm in Section 1.</p>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <p>
+Howdy, I'm in Section 2.
+<br/>
+<br/>
+<br/>
+And im going to make this one a long one!
+</p>
+    </div>
+  </div>
+</div>
+              </div>
+        </div>
+      </div>
+    </div>
   </py:match>
 
   <py:match path="//footer/div" once="true">
@@ -68,4 +101,6 @@
 
   <xi:include href="layout_base.html" />
 </html>
-<!--vim:expandtab:tabstop=2:shiftwidth=2-->
+<!--
+vim:expandtab tabstop=2 shiftwidth=2
+-->

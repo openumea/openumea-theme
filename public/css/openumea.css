@@ -1,5 +1,5 @@
 /*
-vim:expandtab:tabstop=2:shiftwidth=2
+vim:expandtab tabstop=2 shiftwidth=2
 
 Umeå Kommun Riktlinjer:
 http://umea.se/download/18.65abf0f6128091dbd4b80001977/Umeakommun_Riktlinjer.pdf
@@ -61,17 +61,6 @@ header #logo {
   display: none;
 }
 
-header #site-info-container {
-  display: inline-block;
-}
-header .menu {
-  display: inline-block;
-  float: right;
-}
-header .account {
-  float: none;
-}
-
 header #site-name,#site-description {
 /*  font-size: 1.4em; */
   font-family: 'Frutiger', serif, 'Arial';
@@ -100,24 +89,41 @@ header .menu a{
   color: rgb(255,255,255);
   text-shadow: none;
   /* is there a better way? */
-  line-height: 62px;
+  line-height: 60px;
   padding-right: 20px;
 }
 
 div.submenu {
-  background-color: rgb(132,119,131) !important;
+  background-color: #e6e6e6;
+}
+
+div.submenu form {
+  margin: inherit;
 }
 
 body {
   font-family: 'Garamond', 'Times';
   color: black;
+  height: inherit;
 }
+
+body.index.home .front-page .action-box {
+  background-color: initial;
+  box-shadow: rgb(185,185,185) 0 1px 15px;
+  -moz-box-shadow: rgb(185,185,185) 0 1px 15px;
+  -webkit-box-shadow: rgb(185,185,185) 0 1px 15px;
+}
+  
+#wrap {
+  min-height: 80%;
+}
+
 a, a:visited {
   color: rgb(216,149,35);
 }
 
 a:hover {
-  color: rgb(132,119,131);
+  color: #e6e6e6;
 }
 
 .filter-list {
@@ -131,15 +137,20 @@ a:hover {
 
 .footer.outer {
   border-top: none;
-  background-color: rgb(132,119,131);
+  background-color: #e6e6e6;
   background-image: none;
+/*  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff); */
+/*  bottom: 0px; */
+/*  position: absolute;
+  width: 100%; */
+
 /*
-  background-image: -webkit-linear-gradient(top, rgb(132,119,131), #ffffff);
-  background-image: -moz-linear-gradient(top, rgb(132,119,131), #ffffff);
-  background-image: -ms-linear-gradient(top, rgb(132,119,131), #ffffff);
-  background-image: -o-linear-gradient(top, rgb(132,119,131), #ffffff);
-  background-image: linear-gradient(top, rgb(132,119,131), #ffffff);
-  fromilter: progid:DXImageTransform.Microsoft.gradient(startColorStr='rgb(132,119,131)', EndColorStr='#ffffff');
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -moz-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -ms-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: -o-linear-gradient(top, #e6e6e6, #ffffff);
+  background-image: linear-gradient(top, #e6e6e6, #ffffff);
+  fromilter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#ffffff');
 */
 }
 
