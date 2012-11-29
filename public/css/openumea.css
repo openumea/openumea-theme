@@ -187,3 +187,24 @@ a, a:visited, a:hover {
 .footer a,.footer a:visited{
   color: black;
 }
+
+.content-outer .page_heading {
+  color: white;
+  height: 300px;
+  z-index: 1;
+  margin-top: 120px;
+  text-shadow: 1px 1px 3px black;
+}
+
+.content-outer .page_heading_backround {
+  background-image: url(/images/img_0616.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0px;
+  right: 50%;
+  margin-right: -157px;
+  margin-left: 0px;
+  height: 404px;
+  z-index: -1;
+}
