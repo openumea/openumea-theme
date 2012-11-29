@@ -6,17 +6,10 @@
 
   <py:match path="head" once="true">
     <head py:attrs="select('@*')">
-      <meta charset="utf-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <title>About - OpenUmea</title>
-      <meta name="description" content="${g.site_description}"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="alternate" type="application/atom+xml" title="OpenUmea - Recent Revision History" href="/en/revision/list?days=1&amp;format=atom" />
-      <link rel="stylesheet" href="/scripts/vendor/jqueryui/1.8.14/css/jquery-ui.custom.css" type="text/css" media="screen, print" />
-      <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" media="screen, projection" />
-      <link rel="stylesheet" href="/css/chosen.css" type="text/css" />
-      <link rel="stylesheet" href="/css/style.css?v=2" />
+      <!-- We don't need to load Ubuntu Font -->
+      ${select('*[not(@href="http://fonts.googleapis.com/css?family=Ubuntu:400,700")]')}
 
+      <!-- Activate openumea theme-->
       <link href="/css/openumea.css" rel="stylesheet" type="text/css" />
       <script type="text/javascript" src="//use.typekit.net/imt7xtk.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
