@@ -208,3 +208,11 @@ a, a:visited, a:hover {
   height: 404px;
   z-index: -1;
 }
+
+@media all and (max-width:940px) {
+  .content-outer .page_heading_backround {
+    right: initial;
+    width: 626px;
+    margin-right: 0px
+  }
+}
