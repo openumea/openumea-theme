@@ -156,6 +156,12 @@ body.index.home .front-page .action-box {
   -webkit-box-shadow: rgb(185,185,185) 0 1px 15px;
   */
 }
+
+body.index.home .front-page .action-box-inner input {
+  border-radius: 5px;
+  font-size: 1em;
+}
+
 #wrap {
   min-height: 80%;
 }
