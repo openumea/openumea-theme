@@ -149,9 +149,12 @@ body,p {
 body.index.home .front-page .action-box {
   background: #e6e6e6;
   background-image: url(/images/fabric_1.png);
+  border-radius: 5px;
+  /*
   box-shadow: rgb(185,185,185) 0 1px 15px;
   -moz-box-shadow: rgb(185,185,185) 0 1px 15px;
   -webkit-box-shadow: rgb(185,185,185) 0 1px 15px;
+  */
 }
 #wrap {
   min-height: 80%;
