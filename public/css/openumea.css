@@ -86,7 +86,6 @@ h1, h2, h3, h4, h5 {
 
 .header .menu a{
   font-family: 'myriad-pro', 'Frutiger', serif, 'Arial';
-  font-size: 1.0em;
   font-weight: normal;
   color: white;
   text-shadow: none;
@@ -108,22 +107,28 @@ div.submenu form {
   background-image: url(/images/Search.png);
   background-position: 98% center;
   background-repeat: no-repeat;
-  padding-right: 30px;
   background-color: white;
-  width: 90%;
+  width: 590px;
+  font-size: 1.0em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.6em;
+  padding-top: 0.6em;
 }
 
-/*
-#menutabs {
-  display: none;
+#menutabs ul {
+  margin-bottom: 0px;
+  font-size: 1.2em;
+  margin-top: 0.9em;
 }
-*/
 
 div.divider-vertical{
   width: 2px;
-  height: 40px;
-  margin: 0 9px;
+  height: 50px;
+  margin-left: 0px;
+  margin-right -2px;
   overflow: hidden;
+  float: left;
   background-color: #bbbbbb;
   background-image: -webkit-linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
   background-image: -moz-linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
@@ -133,8 +138,10 @@ div.divider-vertical{
 }
 
 body,p {
+  /*
   font-family: 'adobe-garamond-pro', 'Garamond', 'Times';
-  font-size: 14px;
+  */
+  font-family: 'myriad-pro','Frutiger', serif, 'Arial';
   color: black;
   height: inherit;
 }
