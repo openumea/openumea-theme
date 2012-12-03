@@ -58,6 +58,12 @@ h1, h2, h3, h4, h5 {
             filter: inherit;
 }
 
+.header.outer.home {
+  margin-bottom: auto;
+  border-bottom: none;
+  box-shadow: none;
+}
+
 /* remove any logo in the header */
 .header #logo {
   display: none;
@@ -117,9 +123,9 @@ div.submenu form {
 }
 
 #menutabs ul {
-  margin-bottom: 0px;
+  margin-bottom: auto;
   font-size: 1.2em;
-  margin-top: 0.9em;
+  margin-top: 1.0em;
 }
 
 div.divider-vertical{
@@ -192,7 +198,7 @@ a, a:visited, a:hover {
   color: white;
   height: 300px;
   z-index: 1;
-  margin-top: 120px;
+  margin-top: 100px;
   text-shadow: 1px 1px 3px black;
 }
 
