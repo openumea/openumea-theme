@@ -24,5 +24,9 @@ as CKAN, AGPL.
 Umeå Kommun Logo
 ----------------
 
-UmeaKommun.png, UmeaKommun.ico and img_0616.jpg is property of 
-Umeå Kommun.
+UmeaKommun.png and UmeaKommun.ico is property of Umeå Kommun.
+
+Other icons and images
+----------------------
+Other icons and images are under propertary license and can not be
+reused outside openumea.
