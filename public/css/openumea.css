@@ -54,8 +54,8 @@ h1, h2, h3, h4, h5 {
 
 .header.outer {
   background-color: black;
-  background-image: none;
-  filter: none;
+  background-image: inherit;
+            filter: inherit;
 }
 
 /* remove any logo in the header */
@@ -126,7 +126,7 @@ div.divider-vertical{
   width: 2px;
   height: 50px;
   margin-left: 0px;
-  margin-right -2px;
+  margin-right: -2px;
   overflow: hidden;
   float: left;
   background-color: #bbbbbb;
@@ -134,7 +134,7 @@ div.divider-vertical{
   background-image: -moz-linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
   background-image: -ms-linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
   background-image: -o-linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
-  background-image: linear-gradient(top, #e6e6e6, #bbbbbb, #e6e6e6);
+  background-image: linear-gradient(to bottom, #e6e6e6, #bbbbbb, #e6e6e6);
 }
 
 #minornavigation .nav {
@@ -156,11 +156,6 @@ body.index.home .front-page .action-box {
   background: #e6e6e6;
   background-image: url(/images/fabric_1.png);
   border-radius: 5px;
-  /*
-  box-shadow: rgb(185,185,185) 0 1px 15px;
-  -moz-box-shadow: rgb(185,185,185) 0 1px 15px;
-  -webkit-box-shadow: rgb(185,185,185) 0 1px 15px;
-  */
 }
 
 body.index.home .front-page .action-box-inner input {
@@ -176,20 +171,17 @@ a, a:visited, a:hover {
 }
 .btn-primary {
   background-color: rgb(148,33,45);
-  background-image: none;
+  background-image: inherit;
 }
 .btn-primary:hover {
-  background-color: rgb(128,13,25);
-  background-image: none;
+  background-color: rgb(148,33,45);
+  background-image: inherit;
 }
 
 .footer.outer {
   border-top: none;
   background-color: #e6e6e6;
   background-image: url(/images/fabric_1.png);
-/*
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #ffffff);i
-*/
 }
 
 .footer a,.footer a:visited{
